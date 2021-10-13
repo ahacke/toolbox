@@ -33,6 +33,11 @@ function set_npm_proxies() {
 	npm config set https-proxy http://$username:$encodedPassword@$host:$port
 }
 
+function unset_npm_proxies() {
+	npm config rm proxy 
+	npm config rm https-proxy 
+}
+
 function unset_proxies() {
 	echo "Unsetting Proxies"	
 	unset {http,https,ftp}_proxy
