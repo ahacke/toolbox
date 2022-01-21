@@ -6,5 +6,5 @@ function git_delete_localWithoutRemote {
 }
 
 function git_refresh {
-	git fetch --all --prune && git pull origin master
+	git fetch --all --prune && git pull origin main
 }
