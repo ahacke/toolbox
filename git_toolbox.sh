@@ -1,6 +1,7 @@
 echo "Loading git_toolbox..."
 
 # Delete local git branches which do not have a remote branch
+# interesting additions: https://www.erikschierboom.com/2020/02/17/cleaning-up-local-git-branches-deleted-on-a-remote/
 function git_delete_localWithoutRemote {
 	git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done
 }
