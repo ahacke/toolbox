@@ -1,5 +1,8 @@
 echo "Loading bash toolbox..."
 
+alias ll='ls -la'
+alias tf='terraform'
+
 # source: https://gist.github.com/cdown/1163649
 urlencode() {
     # urlencode <string>
