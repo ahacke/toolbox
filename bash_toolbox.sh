@@ -2,6 +2,7 @@ echo "Loading bash toolbox..."
 
 alias ll='ls -la'
 alias tf='terraform'
+alias pip='pip3'
 
 # source: https://gist.github.com/cdown/1163649
 urlencode() {
