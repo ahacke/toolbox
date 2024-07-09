@@ -1,0 +1,28 @@
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>allow.edge.ext</string>
+
+	<key>KeepAlive</key>
+	<false/>
+
+	<key>RunAtLoad</key>
+	<true/>
+
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/PlistBuddy</string>
+		<string>-c</string>
+		<string>Set :ExtensionInstallBlocklist:0 ''</string>
+		<string>/Library/Managed Preferences/<USER>/com.microsoft.Edge.plist</string>
+	</array>
+
+	<key>StandardErrorPath</key>
+	<string>/dev/null</string>
+	<key>StandardOutPath</key>
+	<string>/dev/null</string>
+
+	<key>StartInterval</key>
+	<integer>30</integer>
+</dict>
+</plist>
